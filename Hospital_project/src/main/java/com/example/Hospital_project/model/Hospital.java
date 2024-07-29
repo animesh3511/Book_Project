@@ -11,11 +11,9 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.List;
+
 
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
 @Getter
 @Setter
 @Table(name = "hospital")
@@ -64,8 +62,6 @@ public class Hospital {
     @UpdateTimestamp
     @Column(name = "updatedAt")
     private LocalDateTime updatedAt;
-
-
 
 
 }
